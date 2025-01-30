@@ -1,0 +1,25 @@
+* {
+    font-family: "Inter", serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(49, 49, 99);
+    color: white;
+}
+
+#logo {
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+#sobre_nos {
+    color: white;
+}
+
+.port_about_us {
+    background-color: rgb(91, 126, 199);
+    text-align: center;
+    color: white;
+}
