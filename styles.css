@@ -1,25 +1,64 @@
 * {
-    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(49, 49, 99);
-    color: white;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E2E2E2;
+    color: #333;
 }
 
-#logo {
-    font-size: 25px;
-    padding-left: 30px;
+header {
+    background-color: #ffffff;
+    color: rgb(53, 48, 48);
+    padding: 20px;
 }
 
-#sobre_nos {
-    color: white;
+main {
+    padding: 20px;
 }
 
-.port_about_us {
-    background-color: rgb(91, 126, 199);
+#escolha_perfil {
+    font-size: 64px;
+    color: #767676;
+    padding: 40px;
     text-align: center;
-    color: white;
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.imagem-container {
+    text-align: center;
+}
+
+.imagem {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+#nome_pessoal {
+    color: #767676;
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
