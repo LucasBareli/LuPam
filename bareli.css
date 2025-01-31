@@ -1,8 +1,9 @@
 * {
     font-family: "Inter", serif;
-    background-color: #B2DAFF;
 }
 
-.bareli_name {
-    text-align: center;
+.footer {
+    display: flex;
+    background-color: #A2D2FF;
+    padding: 150px;
 }

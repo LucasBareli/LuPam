@@ -1,0 +1,9 @@
+.banner_pa {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    background-color: #F6ADC4;
+    padding: 150px;
+}
