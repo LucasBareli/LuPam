@@ -1,29 +1,196 @@
-.banner_bareli {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
+/* Padrões */
+body {
+    font-family: "Inter", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.banner_bareli img {
+/* Header */
+.header {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.section_header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.section_header a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.section_header a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Banner */
+.banner_bareli {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    padding: 0 50px; 
+}
+
+#fundo_banner {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; 
+    z-index: -1;
 }
 
 #bem_vindo {
-    position: relative; 
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 64px;
-    z-index: 1;
+    max-width: 60%;
 }
 
-#sobre_mim {
-    position: relative;
+#introducao {
     color: #E2E2E2;
     font-size: 24px;
-    z-index: 1;
+    max-width: 50%; 
+}
+
+.banner_bareli button{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    color: #767676;
+    border: none;
+}
+
+#desenho {
+    position: relative;
+    align-self: flex-end;
+    margin-top: auto;
+    margin-bottom: 20px;
+    max-width: 40%; 
+    height: auto;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sobre_mim {
+    background-color: #f0f0f0;
+}
+
+.sobre_mim h2 {
+    color: #3968CE;
+}
+
+.hobbies {
+    background-color: #A0CEBA;
+}
+
+.hobbies h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #7AACC7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner_bareli {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        padding-top: 80px;
+    }
+
+    #bem_vindo {
+        font-size: 32px;
+    }
+
+    #introducao {
+        font-size: 18px;
+    }
+
+    #desenho {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        max-width: 60%;
+        height: auto;
+    }
+
+    .section_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_header a {
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    ul {
+        padding-left: 20px;
+        text-align: left;
+    }
+
+    li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #bem_vindo {
+        font-size: 48px;
+    }
+
+    #introducao {
+        font-size: 20px;
+    }
+
+    .section_header {
+        justify-content: space-between;
+    }
 }
