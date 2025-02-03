@@ -98,21 +98,43 @@ section {
 
 .hobbies {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column; /* Organiza o conteúdo na vertical */
+    justify-content: center;
     align-items: center;
     position: relative;
-    text-align: left; 
+    text-align: center; /* Alinha o texto no centro */
+    z-index: 1; /* Garante que o conteúdo não sobreponha o fundo */
 }
 
 .hobbies img {
     width: 100%;
     height: 100%;
-    position: relative;
-    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
+    z-index: -1;
+}
+
+.hobbies h2 {
+    color: #E67FA0;
+    padding: 20px;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hobbies p {
+    color: #767676;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
 }
 
 section h2 {
+    position: relative;
     font-size: 32px;
     color: #E67FA0;
     margin-bottom: 20px;
