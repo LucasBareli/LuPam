@@ -1,4 +1,5 @@
 /* Padrões */
+
 body {
     font-family: "Inter", serif;
     margin: 0;
@@ -9,7 +10,7 @@ body {
 /* Header */
 
 .header {
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff;
     display: flex;
     justify-content: space-between; 
@@ -22,8 +23,8 @@ body {
 }
 
 .section_header img {
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
 }
 
 .section_header a {
@@ -93,6 +94,7 @@ body {
 }
 
 /* Seções */
+
 section {
     padding: 40px 20px;
     text-align: center;
@@ -109,28 +111,11 @@ section p {
     color: #767676;
 }
 
-section.filme-preferido {
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
-    gap: 20px;
-}
-
-section.filme-preferido img {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
-}
-
-section.filme-preferido div {
-    max-width: 600px;
-    text-align: left; 
-}
-
 #sobre_mim {
-    background-color: #f0f0f0;
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between; 
 }
 
 #sobre_mim h2 {
@@ -140,6 +125,7 @@ section.filme-preferido div {
 #sobre_mim img {
     width: 372px;
     height: 372px;
+    margin-left: 20px;
 }
 
 .hobbies {
@@ -179,26 +165,52 @@ section.filme-preferido div {
     max-width: 600px;
 }
 
-section h2 {
-    position: relative;
-    font-size: 32px;
-    color: #E67FA0;
-    margin-bottom: 20px;
+.filme-preferido {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 20px;
 }
 
-section p {
-    color: #767676;
+.filme-preferido img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.filme-preferido div {
+    max-width: 600px;
+    text-align: left; 
 }
 
 /* Footer */
+
 .footer {
-    background-color: #F6ADC4;
-    color: white;
-    padding: 20px;
+    background-color: #F6ADC4; 
+    color: white; 
+    padding: 20px; 
     text-align: center;
+    font-size: 16px; 
+    margin-top: 40px;
 }
 
+.footer p {
+    margin: 0;
+    font-size: 14px; 
+}
+
+.footer a {
+    color: white; 
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
 /* Responsividade */
+
 @media (max-width: 768px) {
     .banner_pam {
         flex-direction: column;
