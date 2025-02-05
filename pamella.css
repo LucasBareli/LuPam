@@ -7,15 +7,18 @@ body {
 }
 
 /* Header */
+/* Header */
 .header {
     padding: 20px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .section_header {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
+    align-items: center; 
 }
 
 .section_header img {
@@ -24,7 +27,7 @@ body {
 }
 
 .section_header a {
-    color: white;
+    color: black;
     padding: 10px;
     text-decoration: none;
     font-size: 16px;
@@ -35,6 +38,7 @@ body {
     background-color: #575757;
     border-radius: 4px;
 }
+
 
 /* Banner */
 .banner_pam {
@@ -92,6 +96,36 @@ section {
     padding: 40px 20px;
     text-align: center;
 }
+
+section h2 {
+    position: relative;
+    font-size: 32px;
+    color: #E67FA0;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #767676;
+}
+
+section.filme-preferido {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px;
+}
+
+section.filme-preferido img {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    object-fit: cover;
+}
+
+section.filme-preferido div {
+    max-width: 600px;
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
 
 .sobre_mim {
     background-color: #f0f0f0;
