@@ -7,7 +7,7 @@ body {
 }
 
 /* Header */
-/* Header */
+
 .header {
     padding: 20px;
     background-color: #ffffff;
@@ -41,6 +41,7 @@ body {
 
 
 /* Banner */
+
 .banner_pam {
     display: flex;
     justify-content: space-between; 
@@ -110,39 +111,45 @@ section p {
 
 section.filme-preferido {
     display: flex;
-    justify-content: flex-start; /* Alinha os itens à esquerda */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: flex-start; 
+    align-items: center; 
     gap: 20px;
 }
 
 section.filme-preferido img {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px;
     height: auto;
     object-fit: cover;
 }
 
 section.filme-preferido div {
     max-width: 600px;
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    text-align: left; 
 }
 
-
-.sobre_mim {
+#sobre_mim {
     background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; 
 }
 
-.sobre_mim h2 {
+#sobre_mim h2 {
     color: #E67FA0;
+}
+
+#sobre_mim img {
+    width: 372px;
+    height: 372px;
 }
 
 .hobbies {
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo na vertical */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     position: relative;
-    text-align: center; /* Alinha o texto no centro */
-    z-index: 1; /* Garante que o conteúdo não sobreponha o fundo */
+    text-align: center; 
+    z-index: 1; 
 }
 
 .hobbies img {
