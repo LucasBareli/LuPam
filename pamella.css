@@ -18,6 +18,11 @@ body {
     gap: 20px;
 }
 
+.section_header img {
+    height: 70px;
+    width: 70px;
+}
+
 .section_header a {
     color: white;
     padding: 10px;
