@@ -43,7 +43,7 @@ body {
 
 /* Banner */
 
-.banner_bareli {
+.banner_bare {
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -71,12 +71,12 @@ body {
 }
 
 #introducao {
-    color: #E2E2E2;
+    color: white;
     font-size: 24px;
     max-width: 50%; 
 }
 
-.banner_bareli button{
+.banner_bare button{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
@@ -100,22 +100,69 @@ section {
     text-align: center;
 }
 
+section h2 {
+    position: relative;
+    font-size: 48px;
+    color: #3968CE;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #767676;
+    font-size: 20px;
+}
+
 #sobre_mim {
-    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f4f8; 
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    max-width: 1200px; 
+    margin: 50px auto; 
+}
+
+#sobre_mim .texto {
+    max-width: 600px; 
+    margin-right: 40px; 
 }
 
 #sobre_mim h2 {
-    color: #3968CE;
+    color: #3968CE; 
+    font-size: 42px; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    letter-spacing: 1px; 
 }
 
 #sobre_mim p {
-    color: #767676;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8; 
+    max-width: 500px; 
+}
+
+#sobre_mim .foto {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+#sobre_mim .foto:hover {
+    transform: scale(1.1); 
 }
 
 .hobbies {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     text-align: center; 
@@ -134,6 +181,7 @@ section {
 
 .hobbies h2 {
     color: white;
+    font-size: 48px;
     padding: 20px;
     margin-bottom: 10px; 
     border-radius: 8px;
@@ -143,6 +191,7 @@ section {
 
 .hobbies p {
     color: #767676;
+    font-size: 20px;
     padding: 20px;
     border-radius: 8px;
     width: 80%;
@@ -151,96 +200,63 @@ section {
 
 .filme-preferido {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     align-items: center; 
-    gap: 20px;
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.filme-preferido .texto {
+    max-width: 600px; 
+    text-align: left; 
+    margin-left: 300px;
+}
+
+.filme-preferido h2 {
+    font-size: 48px; 
+    margin-bottom: 10px;
+    color: #3968CE; 
+}
+
+.filme-preferido p {
+    font-size: 20px; 
+    line-height: 1.6; 
+    color: #767676; 
 }
 
 .filme-preferido img {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
+    width: 300px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.filme-preferido div {
-    max-width: 600px;
-    text-align: left; 
-}
 
 /* Footer */
+
 .footer {
-    background-color: #7AACC7;
-    color: white;
-    padding: 20px;
+    background-color: #7AACC7; 
+    color: white; 
+    padding: 20px; 
     text-align: center;
+    font-size: 16px; 
+    margin-top: 40px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .banner_bareli {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding-top: 80px;
-    }
-
-    #bem_vindo {
-        font-size: 32px;
-    }
-
-    #introducao {
-        font-size: 18px;
-    }
-
-    #desenho {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        max-width: 60%;
-        height: auto;
-    }
-
-    .section_header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section_header a {
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    ul {
-        padding-left: 20px;
-        text-align: left;
-    }
-
-    li {
-        font-size: 18px;
-    }
+.footer p {
+    margin: 0;
+    font-size: 14px; 
 }
 
-@media (max-width: 1024px) {
-    #bem_vindo {
-        font-size: 48px;
-    }
+.footer a {
+    color: white; 
+    text-decoration: none;
+}
 
-    #introducao {
-        font-size: 20px;
-    }
-
-    .section_header {
-        justify-content: space-between;
-    }
+.footer a:hover {
+    text-decoration: underline;
 }

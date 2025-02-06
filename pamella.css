@@ -102,13 +102,14 @@ section {
 
 section h2 {
     position: relative;
-    font-size: 32px;
+    font-size: 48px;
     color: #E67FA0;
     margin-bottom: 20px;
 }
 
 section p {
     color: #767676;
+    font-size: 20px;
 }
 
 #sobre_mim {
@@ -120,6 +121,8 @@ section p {
 
 #sobre_mim h2 {
     color: #E67FA0;
+    font-size: 48px;
+    margin-top: -160px;
 }
 
 #sobre_mim img {
@@ -150,6 +153,7 @@ section p {
 
 .hobbies h2 {
     color: #E67FA0;
+    font-size: 48px;
     padding: 20px;
     margin-bottom: 10px; 
     border-radius: 8px;
@@ -159,6 +163,7 @@ section p {
 
 .hobbies p {
     color: #767676;
+    font-size: 20px;
     padding: 20px;
     border-radius: 8px;
     width: 80%;
@@ -167,21 +172,41 @@ section p {
 
 .filme-preferido {
     display: flex;
-    justify-content: flex-start; 
+    justify-content: space-between; 
     align-items: center; 
-    gap: 20px;
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.filme-preferido .texto {
+    max-width: 600px; 
+    text-align: left; 
+    margin-left: 300px;
+}
+
+.filme-preferido h2 {
+    font-size: 48px; 
+    margin-bottom: 10px;
+    color: #E67FA0; 
+}
+
+.filme-preferido p {
+    font-size: 20px; 
+    line-height: 1.6; 
+    color: #767676; 
 }
 
 .filme-preferido img {
-    width: 300px;
-    height: auto;
-    object-fit: cover;
+    width: 300px; 
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.filme-preferido div {
-    max-width: 600px;
-    text-align: left; 
-}
 
 /* Footer */
 
@@ -206,76 +231,4 @@ section p {
 
 .footer a:hover {
     text-decoration: underline;
-}
-
-
-/* Responsividade */
-
-@media (max-width: 768px) {
-    .banner_pam {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        padding-top: 80px;
-    }
-
-    #bem_vindo {
-        font-size: 32px;
-    }
-
-    #introducao {
-        font-size: 18px;
-    }
-
-    #desenho {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        max-width: 60%;
-        height: auto;
-    }
-
-    .section_header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section_header a {
-        padding: 10px;
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    ul {
-        padding-left: 20px;
-        text-align: left;
-    }
-
-    li {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 1024px) {
-    #bem_vindo {
-        font-size: 48px;
-    }
-
-    #introducao {
-        font-size: 20px;
-    }
-
-    .section_header {
-        justify-content: space-between;
-    }
 }
