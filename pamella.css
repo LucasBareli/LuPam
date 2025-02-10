@@ -32,11 +32,10 @@ body {
     padding: 10px;
     text-decoration: none;
     font-size: 16px;
-    color: black;
 }
 
 .section_header a:hover {
-    background-color: #575757;
+    background-color: #ba6e9c;
     border-radius: 4px;
 }
 
@@ -112,24 +111,56 @@ section p {
     font-size: 20px;
 }
 
+/* começo de sobre mim */
+
 #sobre_mim {
     display: flex;
-    flex-direction: row; 
-    align-items: center;
-    justify-content: space-between; 
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f4f8; 
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); 
+    max-width: 1200px; 
+    margin: 50px auto; 
+}
+
+#sobre_mim .texto {
+    max-width: 600px; 
+    margin-right: 40px; 
 }
 
 #sobre_mim h2 {
-    color: #E67FA0;
-    font-size: 48px;
-    margin-top: -160px;
+    color: #E67FA0; 
+    font-size: 42px; 
+    font-weight: 700; 
+    margin-bottom: 20px; 
+    text-align: left;
+    letter-spacing: 1px; 
 }
 
-#sobre_mim img {
-    width: 372px;
-    height: 372px;
-    margin-left: 20px;
+#sobre_mim p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8; 
+    max-width: 500px; 
 }
+
+#sobre_mim .foto {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+#sobre_mim .foto:hover {
+    transform: scale(1.1); 
+}
+
+/* fim de sobre mim */
 
 .hobbies {
     display: flex;
@@ -181,31 +212,51 @@ section p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-.filme-preferido .texto {
-    max-width: 600px; 
-    text-align: left; 
-    margin-left: 300px;
+
+/* começo de musica & filme */
+
+.preferencias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f4f8; /* Mesmo fundo do #sobre_mim */
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto; /* Centraliza */
 }
 
-.filme-preferido h2 {
-    font-size: 48px; 
-    margin-bottom: 10px;
-    color: #E67FA0; 
+.musica, .filme {
+    max-width: 500px;
+    margin-right: 40px; /* Dá espaço entre os itens */
 }
 
-.filme-preferido p {
-    font-size: 20px; 
-    line-height: 1.6; 
-    color: #767676; 
+.musica img, .filme img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
 }
 
-.filme-preferido img {
-    width: 300px; 
-    height: auto; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+.musica h2, .filme h2 {
+    color: #E67FA0;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
 }
+
+.musica p, .filme p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* fim de musica & filme */
 
 
 /* Footer */
